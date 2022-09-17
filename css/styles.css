@@ -1,0 +1,16 @@
+.rym {
+  font-family: rym;
+  font-size: 28px;
+  color: #2cb3d4;
+  text-decoration: none;
+  text-shadow: 1px 1px 6px rgb(121, 255, 54);
+}
+
+.rym:hover {
+  color: #34cf26;
+}
+
+@font-face {
+  font-family: rym;
+  src: url(./get_schwifty.ttf);
+}
