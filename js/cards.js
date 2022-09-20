@@ -1,8 +1,10 @@
 
-const url= 'https://rickandmortyapi.com/api/character/'
+let pagina=1;
+
+const url= `https://rickandmortyapi.com/api/character/?page=${pagina}`
 const fetchedAxios= axios.get(url)
 const responseAPIAxios = fetchedAxios.then((response)=>{
-    console.log(response.data.results);
+    console.log(response);
     
     let body =``;
     response.data.results.forEach(card => {
@@ -17,8 +19,8 @@ const responseAPIAxios = fetchedAxios.then((response)=>{
                     <span class="species ${card.species} badge card-text"> ${card.species}</span>
                 </div>
                 <div class="location">
-                <span class="badge card-text">Location:${card.location.name}</span>
-                <span class="badge card-text">Origin:${card.origin.name}</span>
+                <span class="badge card-text">Location: ${card.location.name}</span>
+                <span class="badge card-text">Origin: ${card.origin.name}</span>
                 </div>
             </div>
         </div>
