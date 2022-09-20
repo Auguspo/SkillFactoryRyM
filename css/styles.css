@@ -4,6 +4,7 @@
   color: #2cb3d4;
   text-decoration: none;
   text-shadow: 1px 1px 6px rgb(121, 255, 54);
+
 }
 
 .rym:hover {
@@ -14,4 +15,126 @@
   font-family: rym;
   src: url(./get_schwifty.ttf);
 }
+
+
+/* RICK AND MORTY CARDS  START*/
+
+#fetch-cards {
+  background-image: linear-gradient(rgba(5,7,12,0.15),rgba(5,7,12,0.85)), url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size:cover ;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fetch-cards .card  {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(5,7,12,0.1),rgba(5,7,12,0.45));
+  background-color: rgba(27, 177, 37, 0.416);
+  border-color:rgba(63, 235, 74, 0) ;
+  width:20%;
+  height:auto;
+  border-radius: 5%;
+}
+
+.imganRaM{
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  margin:2px;
+
+}
+
+.Male {
+    background-color: #060079;
+    color:#868383;
+}
+.Female {
+    background-color: #c41aad;
+}
+.Dead {
+    background-color: #FF1E00;
+}
+
+.Alive {
+    background-color: #6ECB63;
+}
+
+.unknown {
+    background-color: rgb(110, 106, 106);
+}
+
+.Human {
+    background-color: #3AB0FF;
+}
+
+.Alien {
+    background-color: #186918;
+}
+.Mythological.Creature {
+    background-color: #FEB139;
+}
+.Disease {
+    background-color: #000000;
+}
+.Cronenberg {
+    background-color: #eefe39;
+}
+.Robot {
+    background-color: #cecece;
+}
+.Humanoid {
+    background-color: #7f308d;
+}
+.Animal{
+    background-color: #4bbeac;
+}
+.Genderless {
+    background-color: #646712;
+}
+
+.card-body .stats{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+.card-body span {
+  margin: 5px;
+}
+
+.card-body .bg-black {
+  font-size: 20px;
+}
+
+
+.card-body .location {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.card-body .location span {
+  /* background-color: #333333; */
+  color: rgb(168, 168, 168);
+  
+   
+}
+
+
+/* RICK AND MORTY CARDS END*/
+
+
+
+
+
 
