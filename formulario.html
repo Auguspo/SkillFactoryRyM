@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="styles.css">
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+  </head>
+
+  <body>
     <header class="p-3 bg-dark text-white">
-        <div class="containerr">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
-              <li><a href="./users.html" class="nav-link px-2 text-white">Lista de usuarios</a></li>
-              <li><a href="./form.html" class="nav-link px-2 text-white">Formulario</a></li>
-            </ul>
-            <div class="text-end" >
-                <a href="./cardsRickAndMorty.html" class="rym">Rick And Morty</a>
-            </div>
+      <div class="containerr">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="./index.html" class="nav-link px-2 text-white">Home</a>
+            </li>
+            <li>
+              <a href="./users.html" class="nav-link px-2 text-white"
+                >Lista de usuarios</a
+              >
+            </li>
+            <li>
+              <a href="./form.html" class="nav-link px-2 text-white"
+                >Formulario</a
+              >
+            </li>
+          </ul>
+          <div class="text-end">
+            <a href="./cardsRickAndMorty.html" class="rym">Rick And Morty</a>
           </div>
         </div>
-      </header>
-      
-</body>
+      </div>
+    </header>
 
+
+   <div class="col-3"> <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+            <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+      </div>
+    </form>
+  </div>
+  </body>
 </html>
